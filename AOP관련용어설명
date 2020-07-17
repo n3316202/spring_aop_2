@@ -1,0 +1,10 @@
+Aspect : 공통기능이 들어 있는 클래스(예제, 로깅... 트랜잭션 .. )
+Advice : Aspect 클래스에 들어 있는 공통기능(한마디로 Aspcect 안의 함수)
+JointPoint :  advice 함수가 적용되는 함수
+PointCut : Jointpoint의 부분으로 실제로 적용되는 함수내의 지점
+weaving: Advice를 적용하는 행위
+
+Method langthMethod = String.class.getMethod("length"); //length 메소드를 가져와 invoke로 실행시키기
+int length = lengthMethod.invoke(name) //int length = name.length();
+
+https://haviyj.tistory.com/28
